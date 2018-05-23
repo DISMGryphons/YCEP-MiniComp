@@ -10,9 +10,19 @@ idk what to type here
 1. eventvwr
 
 ## Setup Guide
-1. Download EventLog.exe
-2. Autorun it as admin on startup
+1. Place `EventLog.exe` in a discreet location in VM.
+2. Download `TaskScheduling.xml` and place it in the desktop.
+3. Modify the following section of `TaskScheduling.xml` as needed to reflect the new location of `EventLog.exe`:
+```
+<Actions Context="admin">
+    <Exec>
+      <Command>"C:\User\admin\Desktop\EventLog.exe"</Command>
+    </Exec>
+  </Actions>
+```
+4. Place the `start.bat` on the desktop and run the script as an administrator.  
 
+ `EventLog.exe` should now start running everytime the admin user logs on.
 ## Distribution
 - EventLog.exe
     - SHA1: `7c7abe1db5f71a1ae79c5f0022891fa1cfdf2818`
