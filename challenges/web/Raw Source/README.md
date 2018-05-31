@@ -2,7 +2,8 @@
 
 ## Question Text
 
-Just source, raw source.
+Just source, raw source.  
+`http://chal.gryphonctf.com:8000`
 
 ## Setup Guide
 Run `./build.sh`
