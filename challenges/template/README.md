@@ -27,7 +27,7 @@ This is another paragraph.
 Solution to this challenge
 
 ### Flag
-`GCTF{This is the flag}`
+`MC{This is the flag}`
 
 ## Recommended Reads
 * https://links.to.good.reads
