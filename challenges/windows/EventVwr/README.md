@@ -20,7 +20,7 @@ idk what to type here
     </Exec>
   </Actions>
 ```
-4. Place the `start.bat` on the desktop and run the script as an administrator.  
+1. Place the `start.bat` on the desktop, make necessary changes to the script, then run the script as an administrator.  
 
  `EventLog.exe` should now start running everytime the admin user logs on.
 ## Distribution

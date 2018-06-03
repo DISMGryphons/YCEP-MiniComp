@@ -1,0 +1,10 @@
+C:\Users\jonjo\source\repos\YCEP_Listener\YCEP_Listener\bin\Debug\YCEP_Listener.exe.config
+C:\Users\jonjo\source\repos\YCEP_Listener\YCEP_Listener\bin\Debug\YCEP_Listener.exe
+C:\Users\jonjo\source\repos\YCEP_Listener\YCEP_Listener\bin\Debug\YCEP_Listener.pdb
+C:\Users\jonjo\source\repos\YCEP_Listener\YCEP_Listener\obj\Debug\YCEP_Listener.Installer.resources
+C:\Users\jonjo\source\repos\YCEP_Listener\YCEP_Listener\obj\Debug\YCEP_Listener.Service.resources
+C:\Users\jonjo\source\repos\YCEP_Listener\YCEP_Listener\obj\Debug\YCEP_Listener.csproj.GenerateResource.cache
+C:\Users\jonjo\source\repos\YCEP_Listener\YCEP_Listener\obj\Debug\YCEP_Listener.csproj.CoreCompileInputs.cache
+C:\Users\jonjo\source\repos\YCEP_Listener\YCEP_Listener\obj\Debug\YCEP_Listener.exe
+C:\Users\jonjo\source\repos\YCEP_Listener\YCEP_Listener\obj\Debug\YCEP_Listener.pdb
+C:\Users\jonjo\source\repos\YCEP_Listener\YCEP_Listener\obj\Debug\YCEP_Listener.csprojAssemblyReference.cache
