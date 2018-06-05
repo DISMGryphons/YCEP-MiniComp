@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const HOST = '127.0.0.1';
+const HOST = '0.0.0.0';
 const PORT = '8000'
 
 const net = require('net');
@@ -11,6 +11,12 @@ var logNumber = 0;
 
 const server = net.createServer((socket) => {
     const remoteAddress = socket.remoteAddress;
+    socket.on('error', (socket) => {
+        // Assume socket was already disconnected
+        socket.destroy();
+    });
+
+    // Logging
     fs.appendFile(currFileName, 'Connection started from ' + remoteAddress + '\n', (err) => {
         if (err) throw err;
         const fileStats = fs.statSync(currFileName);
@@ -27,4 +33,6 @@ server.on('listening', () => {
 server.on('connection', (socket) => {
     socket.setEncoding('ascii');
     socket.write('MC{TH#_W4LL_15_D0WN}');
+    socket.end();
+    socket.destroy();
 });
