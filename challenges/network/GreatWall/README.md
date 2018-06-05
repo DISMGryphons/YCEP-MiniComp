@@ -2,7 +2,7 @@
 
 ## Question Text
 
-People say the great wall is really effective. It seems so, I can't seem to receive a message. Can you help me?
+People say the Great Wall is really effective. It seems so, I can't seem to receive a message. Can you help me? I'll continue checking in on the logs every 5 minutes!
 
 ### Hints (Optional)
 1. The event logs might help!
@@ -22,7 +22,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\Windows\System3
 
 ## Distribution
 - WinLogin.exe
-    - SHA1: `ff4df8a096985da1f3389db10ab6e1006fac3d68`
+    - SHA1: `4306654c663e0a2e5bb01c8a0d2d9af04c12ed75`
     - To be loaded on Window VM before mini-competiton
 
 ## Solution
