@@ -6,7 +6,7 @@ const PORT = '8000'
 const net = require('net');
 const fs = require('fs');
 
-var currFileName = 'server.log';
+var currFileName = './logs/server.log';
 var logNumber = 0;
 
 const server = net.createServer((socket) => {
