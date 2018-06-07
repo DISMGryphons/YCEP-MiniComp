@@ -32,7 +32,7 @@ server.on('listening', () => {
 
 server.on('connection', (socket) => {
     socket.setEncoding('ascii');
-    socket.write('MC{TH#_W4LL_15_D0WN}');
+    socket.write('Success')
     socket.end();
     socket.destroy();
 });
