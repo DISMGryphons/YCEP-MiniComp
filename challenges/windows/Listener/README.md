@@ -18,7 +18,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\Windows\System3
 ```
 
 ### Service
-1. Run ./build.sh in 
+1. Run ./build.sh in service.
 
 ## Distribution
 - WinLogin.exe
