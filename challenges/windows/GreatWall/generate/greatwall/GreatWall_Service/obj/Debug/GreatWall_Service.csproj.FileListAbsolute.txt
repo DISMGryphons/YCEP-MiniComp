@@ -1,0 +1,17 @@
+C:\Users\jonjo\source\repos\winlogin\GreatWall_Service\obj\Debug\GreatWall_Service.csprojAssemblyReference.cache
+C:\Users\jonjo\source\repos\winlogin\GreatWall_Service\obj\Debug\GreatWall_Service.csproj.CoreCompileInputs.cache
+C:\Users\jonjo\source\repos\winlogin\GreatWall_Service\bin\Debug\winlogin.exe.config
+C:\Users\jonjo\source\repos\winlogin\GreatWall_Service\bin\Debug\winlogin.exe
+C:\Users\jonjo\source\repos\winlogin\GreatWall_Service\bin\Debug\winlogin.pdb
+C:\Users\jonjo\source\repos\winlogin\GreatWall_Service\obj\Debug\winlogin.exe
+C:\Users\jonjo\source\repos\winlogin\GreatWall_Service\obj\Debug\winlogin.pdb
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\bin\Debug\gwservice.exe.config
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\bin\Debug\gwservice.exe
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\bin\Debug\gwservice.pdb
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Debug\GreatWall_Service.csprojAssemblyReference.cache
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Debug\GreatWall_Service.csproj.CoreCompileInputs.cache
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Debug\gwservice.exe
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Debug\gwservice.pdb
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Debug\GreatWall_Service.Service.resources
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Debug\GreatWall_Service.csproj.GenerateResource.cache
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Debug\GreatWall_Service.ProjectInstaller.resources
