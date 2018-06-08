@@ -43,7 +43,6 @@ namespace GreatWall_Service
 
         private bool CheckPorts()
         {
-            CreateLog();
             Type FWManagerType = Type.GetTypeFromProgID("HNetCfg.FwMgr");
             INetFwMgr FWManager = (INetFwMgr)Activator.CreateInstance(FWManagerType);
 
@@ -56,13 +55,23 @@ namespace GreatWall_Service
             }
 
             // Declare ports to check
-            int allowedPortRemoteMin = 5050,
-                allowedPortRemoteMax = 5055,
-                notAllowedPortRemoteMin = 5056,
-                notAllowedPortRemoteMax = 5060;
-            IPAddress ipAddress = IPAddress.Parse("0.0.0.0");
+            int[] allowedPorts = { 9050, 9437, 9928 };
+            List<int> allowedPortList = new List<int>(allowedPorts),
+                notAllowedPortList = new List<int>(3);
 
-            for (int port = allowedPortRemoteMin; port <= allowedPortRemoteMax; port++)
+            int i = 0;
+            Random random = new Random();
+            while (i < notAllowedPortList.Capacity)
+            {
+                int randint = random.Next(9001, 10001);
+                if (!notAllowedPortList.Contains(randint))
+                {
+                    notAllowedPortList.Add(randint);
+                    i++;
+                }
+            }
+
+            foreach (int port in allowedPortList)
             {
                 // Attempt to connect to remote port, should work
                 try
@@ -73,15 +82,16 @@ namespace GreatWall_Service
                 }
                 catch (SocketException e)
                 {
+                    // 10013 is error code when port is blocked
+                    // action not permissible
                     if (e.ErrorCode == 10013)
                     {
                         return false;
                     }
                 }
-
             }
 
-            for (int port = notAllowedPortRemoteMin; port <= notAllowedPortRemoteMax; port++)
+            foreach (int port in notAllowedPortList)
             {
                 // Attempt to connect to remote port, should not work
                 try
@@ -101,18 +111,10 @@ namespace GreatWall_Service
 
             }
 
-            ipAddress = IPAddress.Parse("127.0.0.1");
-            int allowedPortLocalMin = 8000,
-                allowedPortLocalMax = 8005,
-                notAllowedPortLocalMin = 8006,
-                notAllowedPortLocalMax = 8010;
-
-            // Check if port are allowed for bind, should be
-            for (int portNumber = allowedPortLocalMin; portNumber <= allowedPortLocalMax; portNumber++)
+            foreach (int portNumber in allowedPortList)
             {
                 PortInfo port = new PortInfo(portNumber);
                 FWManager.IsPortAllowed(port.imageFileName, port.ipVersion, port.portNumber, port.localAddress, port.ipProtocol, out object Allowed, out object Restricted);
-                // in case needed:
                 // eventLog.WriteEntry("Port " + portNumber + ": " + Allowed + " " + Restricted);
 
                 if (!(bool)Allowed)
@@ -121,15 +123,16 @@ namespace GreatWall_Service
                 }
             }
 
-            // Check if portNumbers are disallowed for bind, should be
-            for (int portNumber = notAllowedPortLocalMin; portNumber <= notAllowedPortLocalMax; portNumber++)
+            foreach (int portNumber in notAllowedPortList)
             {
                 PortInfo port = new PortInfo(portNumber);
                 FWManager.IsPortAllowed(port.imageFileName, port.ipVersion, port.portNumber, port.localAddress, port.ipProtocol, out object Allowed, out object Restricted);
+
                 if ((bool)Allowed)
                 {
                     return false;
                 }
+
             }
 
             // pretty good, passed all filters

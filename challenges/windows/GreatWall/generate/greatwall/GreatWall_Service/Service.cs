@@ -29,6 +29,7 @@ namespace GreatWall_Service
             // UNIMPLEMENTED FUNCTION
             // PopulatePortInfo();
 
+            CreateLog();
             // Run actual check
             while (true)
             {
