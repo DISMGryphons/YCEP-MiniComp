@@ -2,7 +2,7 @@
 
 ## Question Text
 
-There is a service on port 15000 that connects to an external service. You might want to try and intercept the transmission.
+There is a service on port 15000 that makes a connection to an external device. You might find something valuable by intercepting the transmission.
 
 ## Setup Guide
 ### Client
@@ -19,7 +19,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\Windows\System3
 
 ## Distribution
 - InterceptionService.exe
-    - SHA1: `bf5f59e070e2b1708bf774bbe146ad17a0d60ae3`
+    - SHA1: `950dc237fd0842ca38960c775a4a329f86471e4f`
     - To be loaded on Window VM before mini-competiton
 
 ## Solution
