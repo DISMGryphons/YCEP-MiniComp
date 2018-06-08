@@ -15,3 +15,5 @@ D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatW
 D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Debug\GreatWall_Service.Service.resources
 D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Debug\GreatWall_Service.csproj.GenerateResource.cache
 D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Debug\GreatWall_Service.ProjectInstaller.resources
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Debug\Interop.NetFwTypeLib.dll
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Debug\GreatWall_Service.csproj.ResolveComReference.cache

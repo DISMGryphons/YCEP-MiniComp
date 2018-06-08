@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System.ComponentModel;
 using System.Diagnostics;
-using System.Linq;
+using System.IO;
 using System.ServiceProcess;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace GreatWall_Service
 {
@@ -31,6 +26,7 @@ namespace GreatWall_Service
         {
             // Populate struct containing ports
             // to be checked first!
+            // UNIMPLEMENTED FUNCTION
             // PopulatePortInfo();
 
             // Run actual check
@@ -38,13 +34,41 @@ namespace GreatWall_Service
             {
                 bool checkResult = CheckPorts();
                 eventLog.WriteEntry(checkResult.ToString());
+
+                // Desktop
+                string desktopPath = @"C:\Users\jonjo\Desktop\";
                 if (checkResult)
                 {
-                    break;
+                    try
+                    {
+                        // Desktop folder
+                        int count = 1;
+                        string filePath = desktopPath + @"Great_Wall_Flag.txt";
+
+                        while (File.Exists(filePath))
+                        {
+                            filePath = string.Format(desktopPath + @"Great_Wall_Flag ({0}).txt", count);
+                            count++;
+                        }
+
+                        // Create file
+                        FileStream fs = File.Create(filePath);
+                        fs.Close();
+
+                        using (StreamWriter file = new StreamWriter(filePath))
+                        {
+                            file.WriteLine("MC{TH#_W4LL_15_D0WN}");
+                        }
+                        break;
+                    }
+                    catch (System.Exception f)
+                    {
+                        eventLog.WriteEntry(f.Message, EventLogEntryType.Error);
+                    }
                 }
 
-                // Check every ~5 seconds
-                Thread.Sleep(5000);
+                // Check every ~3 seconds
+                Thread.Sleep(3000);
             }
             this.Stop();
         }

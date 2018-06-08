@@ -33,7 +33,7 @@
             // 
             // serviceProcessInstaller
             // 
-            this.serviceProcessInstaller.Account = System.ServiceProcess.ServiceAccount.LocalService;
+            this.serviceProcessInstaller.Account = System.ServiceProcess.ServiceAccount.LocalSystem;
             this.serviceProcessInstaller.Password = null;
             this.serviceProcessInstaller.Username = null;
             // 
@@ -42,6 +42,7 @@
             this.serviceInstaller.Description = "Great Wall challenge service";
             this.serviceInstaller.DisplayName = "Great Wall Service";
             this.serviceInstaller.ServiceName = "gwservice";
+            this.serviceInstaller.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             this.serviceInstaller.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.serviceInstaller_AfterInstall);
             // 
             // ProjectInstaller

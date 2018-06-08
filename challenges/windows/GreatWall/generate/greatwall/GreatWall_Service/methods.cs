@@ -1,57 +1,29 @@
-﻿using System;
+﻿using NetFwTypeLib;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 
 namespace GreatWall_Service
 {
-    // Unused struct, will be implemented if DLL is completed
     struct PortInfo
     {
         public string imageFileName;
-        public dynamic ipVersion;
-        public long portNumber;
+        public NET_FW_IP_VERSION_ ipVersion;
+        public int portNumber;
         public string localAddress;
-        public dynamic ipProtocol;
-    }
+        public NET_FW_IP_PROTOCOL_ ipProtocol;
 
-    // Ports to check
-    partial class Service
-    {
-        // Define a few constants regarding
-        // to be used when using firewall
-        // interface manager.
-        // DO NOT MODIFY!
-        // Currently unused, will implement if
-        // DLL is completed
-        private dynamic
-            NET_FW_IP_VERSION_V4 = 0,
-            NET_FW_IP_VERSION_V6 = 1,
-            NET_FW_IP_VERSION_ANY = 2,
-            NET_FW_IP_PROTOCOL_UDP = 17,
-            NET_FW_IP_PROTOCOL_TCP = 6;
-
-        // Declare GLOBAL array to store structs
-        PortInfo[] enumeratePorts = new PortInfo[2];
-        
-        private void PopulatePortInfo()
+        public PortInfo (int portNumber)
         {
-            // Port 80
-            enumeratePorts[0].imageFileName = null;
-            enumeratePorts[0].ipVersion = NET_FW_IP_VERSION_ANY;
-            enumeratePorts[0].portNumber = 80;
-            enumeratePorts[0].localAddress = null;
-            enumeratePorts[0].ipProtocol = NET_FW_IP_PROTOCOL_TCP;
-
-            // Port 443
-            enumeratePorts[0].imageFileName = null;
-            enumeratePorts[0].ipVersion = NET_FW_IP_VERSION_ANY;
-            enumeratePorts[0].portNumber = 443;
-            enumeratePorts[0].localAddress = null;
-            enumeratePorts[0].ipProtocol = NET_FW_IP_PROTOCOL_TCP;
+            this.imageFileName = null;
+            this.ipVersion = NET_FW_IP_VERSION_.NET_FW_IP_VERSION_V4;
+            this.portNumber = portNumber;
+            this.localAddress = null;
+            this.ipProtocol = NET_FW_IP_PROTOCOL_.NET_FW_IP_PROTOCOL_TCP;
         }
-
-
     }
 
     // Methods
@@ -73,10 +45,10 @@ namespace GreatWall_Service
         {
             CreateLog();
             Type FWManagerType = Type.GetTypeFromProgID("HNetCfg.FwMgr");
-            dynamic FWManager = Activator.CreateInstance(FWManagerType);
+            INetFwMgr FWManager = (INetFwMgr)Activator.CreateInstance(FWManagerType);
 
             // Set profile interface, makes life easier
-            dynamic profile = FWManager.LocalPolicy.CurrentProfile;
+            INetFwProfile profile = FWManager.LocalPolicy.CurrentProfile;
 
             if (!profile.FirewallEnabled)
             {
@@ -84,47 +56,81 @@ namespace GreatWall_Service
             }
 
             // Declare ports to check
-            int localPort = 50000;
-            int allowedPortMin = 5050,
-                allowedPortMax = 5055;
-            int notAllowedPortMin = 5056,
-                notAllowedPortMax = 5060;
+            int allowedPortRemoteMin = 5050,
+                allowedPortRemoteMax = 5055,
+                notAllowedPortRemoteMin = 5056,
+                notAllowedPortRemoteMax = 5060;
             IPAddress ipAddress = IPAddress.Parse("0.0.0.0");
 
-            for (int port = allowedPortMin; port <= allowedPortMax; port++)
+            for (int port = allowedPortRemoteMin; port <= allowedPortRemoteMax; port++)
             {
                 // Attempt to connect to remote port, should work
                 try
                 {
-                    IPEndPoint endPoint = new IPEndPoint(ipAddress, localPort);
-                    TcpClient client = new TcpClient(endPoint);
+                    TcpClient client = new TcpClient();
                     client.Connect("chal.gryphonctf.com", port);
-                    continue;
+                    client.Close();
                 }
                 catch (SocketException e)
                 {
-                    eventLog.WriteEntry("Port " + port + ": " + e.Message);
-                    return false;
+                    if (e.ErrorCode == 10013)
+                    {
+                        return false;
+                    }
                 }
-                
+
             }
 
-            for (int port = notAllowedPortMin; port <= notAllowedPortMax; port++)
+            for (int port = notAllowedPortRemoteMin; port <= notAllowedPortRemoteMax; port++)
             {
                 // Attempt to connect to remote port, should not work
                 try
                 {
-                    IPEndPoint endPoint = new IPEndPoint(ipAddress, localPort);
-                    TcpClient client = new TcpClient(endPoint);
+                    TcpClient client = new TcpClient();
                     client.Connect("chal.gryphonctf.com", port);
+                    client.Close();
                     return false;
                 }
                 catch (SocketException e)
                 {
-                    eventLog.WriteEntry("Port " + port + ": " + e.Message);
-                    continue;
+                    if (e.ErrorCode != 10013)
+                    {
+                        return false;
+                    }
                 }
 
+            }
+
+            ipAddress = IPAddress.Parse("127.0.0.1");
+            int allowedPortLocalMin = 8000,
+                allowedPortLocalMax = 8005,
+                notAllowedPortLocalMin = 8006,
+                notAllowedPortLocalMax = 8010;
+
+            // Check if port are allowed for bind, should be
+            for (int portNumber = allowedPortLocalMin; portNumber <= allowedPortLocalMax; portNumber++)
+            {
+                PortInfo port = new PortInfo(portNumber);
+                FWManager.IsPortAllowed(port.imageFileName, port.ipVersion, port.portNumber, port.localAddress, port.ipProtocol, out object Allowed, out object Restricted);
+                // in case needed:
+                // eventLog.WriteEntry("Port " + portNumber + ": " + Allowed + " " + Restricted);
+
+                if (!(bool)Allowed)
+                {
+                    return false;
+                }
+            }
+
+            // Check if portNumbers are disallowed for bind, should be
+            for (int portNumber = notAllowedPortLocalMin; portNumber <= notAllowedPortLocalMax; portNumber++)
+            {
+                PortInfo port = new PortInfo(portNumber);
+                FWManager.IsPortAllowed(port.imageFileName, port.ipVersion, port.portNumber, port.localAddress, port.ipProtocol, out object Allowed, out object Restricted);
+                eventLog.WriteEntry("Port " + portNumber + ": " + Allowed + " " + Restricted);
+                if ((bool)Allowed)
+                {
+                    return false;
+                }
             }
 
             // pretty good, passed all filters

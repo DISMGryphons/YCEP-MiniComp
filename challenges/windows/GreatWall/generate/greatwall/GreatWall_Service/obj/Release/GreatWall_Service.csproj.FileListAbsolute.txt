@@ -1,0 +1,12 @@
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Release\GreatWall_Service.csprojAssemblyReference.cache
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Release\GreatWall_Service.ProjectInstaller.resources
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Release\GreatWall_Service.Service.resources
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Release\GreatWall_Service.csproj.GenerateResource.cache
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Release\GreatWall_Service.csproj.CoreCompileInputs.cache
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\bin\Release\gwservice.exe.config
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\bin\Release\gwservice.exe
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\bin\Release\gwservice.pdb
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Release\gwservice.exe
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Release\gwservice.pdb
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Release\Interop.NetFwTypeLib.dll
+D:\GitRepos\YCEP-MiniComp\challenges\windows\GreatWall\generate\greatwall\GreatWall_Service\obj\Release\GreatWall_Service.csproj.ResolveComReference.cache
