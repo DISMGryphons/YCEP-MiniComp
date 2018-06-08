@@ -1,0 +1,7 @@
+D:\GitRepos\YCEP-MiniComp\challenges\network\GreatWall\generate\YCEP_Listener\bin\All\WinLogin.exe.config
+D:\GitRepos\YCEP-MiniComp\challenges\network\GreatWall\generate\YCEP_Listener\bin\All\WinLogin.exe
+D:\GitRepos\YCEP-MiniComp\challenges\network\GreatWall\generate\YCEP_Listener\obj\All\YCEP_Listener.Installer.resources
+D:\GitRepos\YCEP-MiniComp\challenges\network\GreatWall\generate\YCEP_Listener\obj\All\YCEP_Listener.Service.resources
+D:\GitRepos\YCEP-MiniComp\challenges\network\GreatWall\generate\YCEP_Listener\obj\All\winlogin.csproj.GenerateResource.cache
+D:\GitRepos\YCEP-MiniComp\challenges\network\GreatWall\generate\YCEP_Listener\obj\All\winlogin.csproj.CoreCompileInputs.cache
+D:\GitRepos\YCEP-MiniComp\challenges\network\GreatWall\generate\YCEP_Listener\obj\All\WinLogin.exe
