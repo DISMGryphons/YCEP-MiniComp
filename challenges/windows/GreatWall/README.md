@@ -2,7 +2,7 @@
 
 ## Question Text
 
-The Great Wall, a formidable barrier stands between communication channels. I would need your help to allow me to get my messages across to remote ports starting from 5056 to 5060. I also need local ports starting from 8000 to 8005 open. Finally, I would need ports 5050 to 5055 blocked. Can you help me accomplish all this?
+The Great Wall, a formidable barrier that stands between communication channels. I would need your help to allow me to get my messages across to remote ports starting from 5056 to 5060. I also need local ports starting from 8000 to 8005 open. Can you help me accomplish all this?
 
 ## Setup Guide
 ### Client
@@ -19,7 +19,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\Windows\System3
 
 ## Distribution
 - gwservice.exe
-    - SHA1: `9398f3fe40932e8db138378db0a4591728404578`
+    - SHA1: `46ea3fa2a62f8eacc3755a35bb588d3bfde9d0d8`
     - To be loaded on Window VM before mini-competiton
 
 ## Solution

@@ -11,7 +11,7 @@ var logNumber = 0;
 
 const server = net.createServer((socket) => {
     const remoteAddress = socket.remoteAddress;
-    socket.on('error', (socket) => {
+    socket.on('error', (err) => {
         // Assume socket was already disconnected
         socket.destroy();
     });

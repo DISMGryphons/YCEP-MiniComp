@@ -36,6 +36,7 @@
             // 
             // Service
             // 
+            this.AutoLog = false;
             this.ServiceName = "Great Wall Service";
 
         }

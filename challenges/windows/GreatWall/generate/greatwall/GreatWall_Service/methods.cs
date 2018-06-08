@@ -18,11 +18,11 @@ namespace GreatWall_Service
 
         public PortInfo (int portNumber)
         {
-            this.imageFileName = null;
-            this.ipVersion = NET_FW_IP_VERSION_.NET_FW_IP_VERSION_V4;
+            imageFileName = null;
+            ipVersion = NET_FW_IP_VERSION_.NET_FW_IP_VERSION_V4;
             this.portNumber = portNumber;
-            this.localAddress = null;
-            this.ipProtocol = NET_FW_IP_PROTOCOL_.NET_FW_IP_PROTOCOL_TCP;
+            localAddress = null;
+            ipProtocol = NET_FW_IP_PROTOCOL_.NET_FW_IP_PROTOCOL_TCP;
         }
     }
 
@@ -126,7 +126,6 @@ namespace GreatWall_Service
             {
                 PortInfo port = new PortInfo(portNumber);
                 FWManager.IsPortAllowed(port.imageFileName, port.ipVersion, port.portNumber, port.localAddress, port.ipProtocol, out object Allowed, out object Restricted);
-                eventLog.WriteEntry("Port " + portNumber + ": " + Allowed + " " + Restricted);
                 if ((bool)Allowed)
                 {
                     return false;

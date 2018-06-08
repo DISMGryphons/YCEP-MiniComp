@@ -21,7 +21,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\Windows\System3
 
 ### Distribution
 - WinLogin.exe
-    - SHA1: `5c715135f6240e8ed7f960e66b06b631ca1752c1`
+    - SHA1: `99c5043d882a47bb6b2003ef1409da75efc5204d`
     - To be loaded on Window VM before mini-competiton
 
 ## Solution

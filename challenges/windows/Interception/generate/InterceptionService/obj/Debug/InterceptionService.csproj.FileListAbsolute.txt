@@ -1,0 +1,10 @@
+D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\bin\Debug\InterceptionService.exe.config
+D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\bin\Debug\InterceptionService.exe
+D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\bin\Debug\InterceptionService.pdb
+D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\obj\Debug\InterceptionService.csprojAssemblyReference.cache
+D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\obj\Debug\InterceptionService.ProjectInstaller.resources
+D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\obj\Debug\InterceptionService.Service.resources
+D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\obj\Debug\InterceptionService.csproj.GenerateResource.cache
+D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\obj\Debug\InterceptionService.csproj.CoreCompileInputs.cache
+D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\obj\Debug\InterceptionService.exe
+D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\obj\Debug\InterceptionService.pdb

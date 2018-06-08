@@ -33,7 +33,7 @@ namespace GreatWall_Service
             while (true)
             {
                 bool checkResult = CheckPorts();
-                eventLog.WriteEntry(checkResult.ToString());
+                // eventLog.WriteEntry(checkResult.ToString());
 
                 // Desktop
                 string desktopPath = @"C:\Users\jonjo\Desktop\";
