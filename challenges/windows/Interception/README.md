@@ -23,7 +23,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\Windows\System3
     - To be loaded on Window VM before mini-competiton
 
 ## Solution
-Run wireshark and start capturing for at least 10 seconds.
+Run Wireshark and start capturing for at least 10 seconds.
 
 ### Flag
-`MC{TH#_W4LL_15_D0WN}`
+`MC{M155I0N_1MP0S51BL3}`

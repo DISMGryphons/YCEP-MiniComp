@@ -25,7 +25,8 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\Windows\System3
     - To be loaded on Window VM before mini-competiton
 
 ## Solution
-Solution to this challenge
+Run the `netstat -anb` from the command line.
+Find the program listening at port 0.0.0.0:10000
 
 ### Flag
 `MC{WINDOWS_LOGIN_APPLICATION}`
