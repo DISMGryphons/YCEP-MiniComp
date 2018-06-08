@@ -29,7 +29,7 @@ namespace InterceptionService
             IPAddress localAddr = IPAddress.Parse("0.0.0.0");
             IPEndPoint localEndPoint = new IPEndPoint(localAddr, 15000);
             TcpClient client = new TcpClient(localEndPoint);
-            client.Connect("chal.gryphonctf.com", 8000);
+            client.Connect("chal.gryphonctf.com", 9000);
             NetworkStream ns = null;
 
             try
