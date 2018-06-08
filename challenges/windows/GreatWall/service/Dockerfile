@@ -3,11 +3,9 @@ FROM node:alpine
 # Basic stuff
 RUN apk update
 RUN apk upgrade
-RUN apk add iptables
 
 # Files
 COPY server.js /home/nodeGW/
-COPY trafficRedirect.sh /home/nodeGW/
 
 # User
 RUN adduser -D nodeGW
