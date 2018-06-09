@@ -19,7 +19,7 @@ Apparently the flag is hidden in this text file, can you find the flag for me?
 # get all data streams of flag.txt
 > Get-Item -Path .\flag.txt -Stream *
 
-   FileName: C:\Users\admin\Desktop\Chal1\flag.txt
+   FileName: C:\Users\admin\Desktop\flag.txt
 
 Stream                   Length
 ------                   ------
