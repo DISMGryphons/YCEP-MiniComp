@@ -38,7 +38,7 @@
   </Settings>
   <Actions Context="admin">
     <Exec>
-      <Command>"C:\..."</Command>
+      <Command>"C:\Windows\System32\EventLog.exe"</Command>
     </Exec>
   </Actions>
 </Task>

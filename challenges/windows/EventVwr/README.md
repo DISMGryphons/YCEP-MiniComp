@@ -2,25 +2,25 @@
 
 ## Question Text
 
-Every 30 minutes, you'll get a 5 minutes of chance to get the flag!
-
-idk what to type here
+As a good sys admin you should always check your logs!
 
 ### Hints (Optional)
-1. eventvwr
+1. The flag is base64 encoded.
 
 ## Setup Guide
-1. Place `EventLog.exe` in a discreet location in VM.
+1. Place `EventLog.exe` in `C:\Windows\System32\`.
 2. Download `TaskScheduling.xml` and place it in the desktop.
 3. Modify the following section of `TaskScheduling.xml` as needed to reflect the new location of `EventLog.exe`:
 ```
 <Actions Context="admin">
     <Exec>
-      <Command>"C:\User\admin\Desktop\EventLog.exe"</Command>
+      <Command>"C:\Windows\System32\EventLog.exe"</Command>
     </Exec>
   </Actions>
 ```
-1. Place the `start.bat` on the desktop, make necessary changes to the script, then run the script as an administrator.  
+4. Place the `start.bat` on the desktop, make necessary changes to the script, then run the script as an administrator.  
+5. Delete start.bat and TaskScheduling.xml  
+
 
  `EventLog.exe` should now start running everytime the admin user logs on.
 ## Distribution
