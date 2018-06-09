@@ -2,7 +2,7 @@
 
 ## Question Text
 
-There is a service on port 15000 that makes a connection to an external device. You might find something valuable by intercepting the transmission.
+There is a service on port 15000 that makes a connection to an external server. You might find something valuable in the traffic.
 
 ## Setup Guide
 ### Client
