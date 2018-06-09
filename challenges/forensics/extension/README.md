@@ -5,7 +5,7 @@
 The flag is in this file but I can't open it!
 
 ## Distribution
-- filename1.txt
+- extension.png
     - SHA1: `1f6930cd4c754c467af4f14938b3ad5c977645c3`
     - Text file with png extension
 
