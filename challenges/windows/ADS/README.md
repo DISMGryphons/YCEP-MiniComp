@@ -8,10 +8,11 @@ Apparently the flag is hidden in this text file, can you find the flag for me?
 1. Alternate Data Stream
 
 ## Setup Guide
-1. `Add-Content -Path flag.txt -Value 'MC{5n34kY_ALT3RnaTe_D474_STr34mZ}' -Stream 'flagStream'`
-
-## Distribution
-- In Win10 VM
+> In Windows VM
+1. `cd 'C:\Users\admin\Desktop\'`
+2. `'There is a flag here.' > 'flag.txt'`
+3. `Add-Content -Path flag.txt -Value 'MC{5n34kY_ALT3RnaTe_D474_STr34mZ}' -Stream 'flagStream'`
+4. `Remove-Item (Get-PSReadlineOption).HistorySavePath`
 
 ## Solution
 ```powershell
