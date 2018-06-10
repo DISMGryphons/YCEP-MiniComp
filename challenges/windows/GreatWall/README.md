@@ -6,12 +6,12 @@ The Great Wall, a formidable barrier that stands between communication channels.
 
 ## Setup Guide
 ### Client
-1. Place `gwservice.exe` in `%SYSTEMROOT%\System32\`.
+1. Place `gwservice.exe` in `C:\YCEP\Service`.
 2. Open command prompt as administrator.
 3. Run the following commands:  
 ```
 // Service should automatically start on next bootup
-C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\Windows\System32\gwservice.exe
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\YCEP\Service\gwservice.exe
 ```
 
 ### Service
@@ -19,7 +19,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\Windows\System3
 
 ## Distribution
 - gwservice.exe
-    - SHA1: `e9180a968f4d2768319274ab4ff50b8629717fd9`
+    - SHA1: `e41d4c745ef4586e5061bc54c0ee5d77fc4d33b4`
     - To be loaded on Window VM before mini-competiton
 
 ## Solution

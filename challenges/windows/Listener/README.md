@@ -11,12 +11,12 @@ I have a service listening on port 10000, can you help me get the name of the se
 
 ## Setup Guide
 ### Client
-1. Place `WinLogin.exe` in `%SYSTEMROOT%\System32\`.
+1. Place `WinLogin.exe` in `C:\YCEP\Service`.
 2. Open command prompt as administrator.
 3. Run the following commands:  
 ```
 // Service should automatically start on next bootup
-C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\Windows\System32\WinLogin.exe
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\YCEP\Service\WinLogin.exe
 ```
 
 ### Distribution

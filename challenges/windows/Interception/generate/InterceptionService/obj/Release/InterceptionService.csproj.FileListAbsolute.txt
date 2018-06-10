@@ -7,3 +7,4 @@ D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionS
 D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\obj\Release\InterceptionService.csproj.CoreCompileInputs.cache
 D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\obj\Release\InterceptionService.exe
 D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\obj\Release\InterceptionService.pdb
+D:\GitRepos\YCEP-MiniComp\challenges\windows\Interception\generate\InterceptionService\obj\Release\InterceptionService.csprojAssemblyReference.cache

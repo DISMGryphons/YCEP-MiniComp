@@ -6,12 +6,12 @@ There is a service on port 15000 that makes a connection to an external server. 
 
 ## Setup Guide
 ### Client
-1. Place `InterceptionService.exe` in `%SYSTEMROOT%\System32\`.
+1. Place `InterceptionService.exe` in `C:\YCEP\Service`.
 2. Open command prompt as administrator.
 3. Run the following commands:  
 ```
 // Service should automatically start on next bootup
-C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\Windows\System32\InterceptionService.exe
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\YCEP\Service\InterceptionService.exe
 ```
 
 ### Service
@@ -19,7 +19,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\Windows\System3
 
 ## Distribution
 - InterceptionService.exe
-    - SHA1: `950dc237fd0842ca38960c775a4a329f86471e4f`
+    - SHA1: `c60ec0da8510c847b1bf159f8ab87e58533e81f0`
     - To be loaded on Window VM before mini-competiton
 
 ## Solution
