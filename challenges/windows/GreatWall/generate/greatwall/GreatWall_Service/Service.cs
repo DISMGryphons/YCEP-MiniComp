@@ -37,7 +37,7 @@ namespace GreatWall_Service
                 // eventLog.WriteEntry(checkResult.ToString());
 
                 // Desktop
-                string desktopPath = @"C:\Users\jonjo\Desktop\";
+                string desktopPath = @"C:\Users\YCEP\Desktop\";
                 if (checkResult)
                 {
                     try
