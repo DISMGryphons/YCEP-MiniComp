@@ -27,7 +27,7 @@ As a good sys admin you should always check your logs!
 2. eventvwr
 3. Click Window Logs
 4. Click Application
-5. Look for Source named: MC
+5. Look for Source named: F1@G
 6. Details consist of Base64 Encoded. Decode it.
 
 ### Flag
