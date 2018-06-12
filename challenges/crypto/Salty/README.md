@@ -3,11 +3,11 @@
 ## Question Text
 > Warning Advanced Challenge, Proceed with caution  
 
-I found this website that is still under development, can you break into it?
+I found this website that is still under development, can you break into it?  
 `http://chal.gryphonctf.com:7000/`  
 
 ### Hints (Optional)
-1. Have you ever heard of robots.txt?
+1. Ever heard of robots.txt?
 2. The password is in rockyou.txt
 
 ## Setup Guide
