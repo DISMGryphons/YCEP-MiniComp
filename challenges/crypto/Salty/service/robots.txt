@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /WHEOi6NVuu1TsjnBj66u.txt
