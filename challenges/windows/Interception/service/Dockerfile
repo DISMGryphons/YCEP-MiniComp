@@ -1,9 +1,5 @@
 FROM node:alpine
 
-# Basic stuff
-RUN apk update
-RUN apk upgrade
-
 # Files
 COPY server.js /home/nodeINT/
 
