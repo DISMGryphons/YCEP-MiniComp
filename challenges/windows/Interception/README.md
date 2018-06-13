@@ -19,7 +19,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe C:\YCEP\Service\In
 
 ## Distribution
 - InterceptionService.exe
-    - SHA1: `c60ec0da8510c847b1bf159f8ab87e58533e81f0`
+    - SHA1: `4a421ccdf1eb89a5c549b4f4945e186301ced403`
     - To be loaded on Window VM before mini-competiton
 
 ## Solution
