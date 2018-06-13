@@ -1,4 +1,4 @@
-# Note to self this is the admin password hash
+# Note to self this is the admin password hash (password is in rockyou.txt)
 # Remember to delete this before production
 # password:salt
 d9c6d1ee91be318c12c444ca7cc5d04a:FaWYT0sqwT
