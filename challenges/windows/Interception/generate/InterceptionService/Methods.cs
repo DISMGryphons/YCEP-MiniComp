@@ -9,7 +9,7 @@ using System.Threading;
 
 namespace InterceptionService
 {
-    
+
     partial class Service
     {
         EventLog eventLog = null;
@@ -35,13 +35,13 @@ namespace InterceptionService
             {
                 client.Connect("chal.gryphonctf.com", 9000);
 
-                
+
                 if (client.Connected)
                 {
                     ns = client.GetStream();
                     byte[] buffer = new byte[512];
 
-                    buffer = Encoding.ASCII.GetBytes("Hi!");
+                    buffer = Encoding.ASCII.GetBytes("940bc2aaf7d4fe6766781af41d639de7f2f9ca07");
                     ns.Write(buffer, 0, buffer.Length);
 
                     ns.Read(buffer, 0, buffer.Length);

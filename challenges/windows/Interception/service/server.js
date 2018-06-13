@@ -33,9 +33,11 @@ server.on('listening', () => {
 server.on('connection', (socket) => {
     socket.setEncoding('ascii');
     socket.on('data', (data) => {
-        console.log("Client got flag!");
-        socket.write('MC{M155I0N_1MP0S51BL3}');
-        socket.end();
-        socket.destroy();
+        if data === "940bc2aaf7d4fe6766781af41d639de7f2f9ca07" {
+            console.log("Client got flag!");
+            socket.write('MC{M155I0N_1MP0S51BL3}');
+            socket.end();
+            socket.destroy();
+        }
     });
 });
