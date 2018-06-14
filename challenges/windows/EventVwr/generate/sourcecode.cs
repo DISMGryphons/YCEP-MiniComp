@@ -23,6 +23,7 @@ namespace FormEvent
                 
             }
             createRNGEvent();
+            createEvent();
         }
 
         public string generateName(int x)
@@ -51,13 +52,13 @@ namespace FormEvent
 
         private void createEvent()
         {
-            string source = "F1@g";
+            string source = "MC FLAG";
             string log = "Application";
             if (!EventLog.SourceExists(source))
             {
                 EventLog.CreateEventSource(source, log);
             }
-            EventLog.WriteEntry(source, "TUN7RVYzTjdfVjEzVzNSfQo=", EventLogEntryType.Information);
+            EventLog.WriteEntry(source, ":galf eht s'ereh dna hO !esrever ni epyt ot ekil I \n" + "}R3W31V_7N3VE{CM", EventLogEntryType.Information);
 
         }
 

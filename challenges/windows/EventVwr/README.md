@@ -5,7 +5,7 @@
 As a good sys admin you should always check your logs!
 
 ### Hints (Optional)
-1. The flag is base64 encoded.
+1. The flag is hidden in Window Application Logs.
 
 ## Setup Guide
 1. Place `EventLog.exe` in `C:\YCEP\Executables`.
@@ -19,16 +19,14 @@ As a good sys admin you should always check your logs!
  `EventLog.exe` should now start running everytime the admin user logs on.
 ## Distribution
 - EventLog.exe
-    - SHA1: `8a9c048cc0cd9e794d3274a4b66fd228ac52dea5`
+    - SHA1: `413c01227319d140bf5d28adc5182126fbd6a438`
     - Form is hidden when run. It can be ended through task manager.
 
 ## Solution
-1. WINDOW + R
-2. eventvwr
-3. Click Window Logs
-4. Click Application
-5. Look for Source named: F1@G
-6. Details consist of Base64 Encoded. Decode it.
+1. Go to Event Viewer
+2. On the left side, Under Window Logs -> Application
+3. Filter for source named: MC FLAG
+4. Details consist of gibberish text. Reverse it to get the flag.
 
 ### Flag
 `MC{EV3N7_V13W3R}`
