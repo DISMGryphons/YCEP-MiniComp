@@ -6,10 +6,10 @@ I intercepted this encrypted pgp message from whiter0se, can you decrypt it for 
 
 ## Distribution
 - darkarmy
-    - SHA1: `b55af405a37a2d3c8d858f1e332bd4a31c5e6bad`
+    - SHA1: `210aaa7a31bbb4b3b2344080d80117f86aeecc5d`
     - PGP Encrypted message
 - private.asc
-    - SHA1: `5902868f31c6116d62d41f585b926f97f76ada32`
+    - SHA1: `f69f3607926e4389930a51baf0e74a57f642f295`
     - PGP private key
 
 ## Solution
