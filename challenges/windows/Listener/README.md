@@ -6,6 +6,9 @@ I have a service listening on port 10000, can you help me get the name of the se
 
 *E.g. If service name is "Windows Update Service":* `MC{WINDOWS_UPDATE_SERVICE}`
 
+### Hints
+1. What is my full name?
+
 ## Setup Guide
 ### Client
 1. Place `WinLogin.exe` in `C:\YCEP\Service`.
