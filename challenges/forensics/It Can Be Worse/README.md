@@ -1,13 +1,11 @@
 # It Can Be Worse
 ## Question Text
-> Warning Advanced Challenge, Proceed with caution  
+> Warning: This is an  Advanced Challenge. Attempt only if you have completed everything else  
 
 I managed to clone our target's usb, I need you to do a forensics analysis on it.
 
 ### Hints (Optional)
-1. Ext4 is the filesystem
-2. secret file is a png file
-3. Something is wrong with the png file signature
+1. Something is wrong with the png file signature
 
 ## Distribution
 - itcanbeworse.dd

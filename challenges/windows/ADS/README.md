@@ -1,6 +1,7 @@
 # ADS
 
 ## Question Text
+> Warning: This is an  Advanced Challenge. Attempt only if you have completed everything else  
 
 Apparently the flag is hidden in this text file, can you find the flag for me? 
 

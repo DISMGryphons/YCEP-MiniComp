@@ -1,7 +1,8 @@
 # Search Bar
 
 ## Question Text
-> Warning: This is an  Advanced Challenge. Attempt only if you have completed everything else
+> Warning: This is an  Advanced Challenge. Attempt only if you have completed everything else  
+
 I heard the admins discussing that the flag is in secret table. I wonder whether I can get it.
 `http://chal.gryphonctf.com:8002`
 

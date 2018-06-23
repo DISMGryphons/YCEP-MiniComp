@@ -1,7 +1,7 @@
 # Salty
 
 ## Question Text
-> Warning Advanced Challenge, Proceed with caution  
+> Warning: This is an  Advanced Challenge. Attempt only if you have completed everything else  
 
 I found this website that is still under development, can you break into it?  
 `http://chal.gryphonctf.com:7000/`  
